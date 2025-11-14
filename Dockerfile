@@ -20,7 +20,7 @@ RUN pip install --no-cache-dir git+https://github.com/Xinntao/BasicSR.git
 RUN pip install --no-cache-dir -r requirements.txt 
 
 # Expose the default port for FastAPI / Uvicorn 
-EXPOSE 8000 
+EXPOSE 8080
 
 # Command to start the FastAPI app 
 CMD ["sh", "-c", "uvicorn app:app --host 0.0.0.0 --port ${PORT}"]
